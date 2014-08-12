@@ -14,5 +14,6 @@ for version in "${versions[@]}"; do
 	(
 		set -x
 		sed -ri 's/^(ENV NODE_VERSION) .*/\1 '"$fullVersion"'/' "$version/Dockerfile"
+		sed -ri 's/^(FROM node):.*/\1:'"$fullVersion"'/' "$version/onbuild/Dockerfile"
 	)
 done
