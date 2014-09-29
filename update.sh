@@ -10,7 +10,7 @@ fi
 versions=( "${versions[@]%/}" )
 
 for version in "${versions[@]}"; do
-	fullVersion="$(curl -sSL 'http://nodejs.org/dist' | grep '<a href="v'"$version." | sed -r 's!.*<a href="v([^"/]+)/?".*!\1!' | sort -V | tail -1)"
+	fullVersion="$(curl -sSL --compressed 'http://nodejs.org/dist' | grep '<a href="v'"$version." | sed -r 's!.*<a href="v([^"/]+)/?".*!\1!' | sort -V | tail -1)"
 	(
 		set -x
 		sed -ri 's/^(ENV NODE_VERSION) .*/\1 '"$fullVersion"'/' "$version/Dockerfile"
