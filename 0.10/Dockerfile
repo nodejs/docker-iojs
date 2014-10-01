@@ -1,8 +1,12 @@
-FROM buildpack-deps
+FROM debian:wheezy
 
-RUN apt-get update && apt-get install -y \
+RUN apt-get update && apt-get install -y --no-install-recommends \
 		ca-certificates \
-		curl
+		curl \
+		build-essential \
+		pkg-config \
+		git \
+		python # needed by gyp
 
 # verify gpg and sha256: http://nodejs.org/dist/v0.10.31/SHASUMS256.txt.asc
 # gpg: aka "Timothy J Fontaine (Work) <tj.fontaine@joyent.com>"
