@@ -24,16 +24,18 @@ for version in "${versions[@]}"; do
 		echo "$va: ${url}@${commit} $version"
 	done
 	
-	for variant in onbuild; do
-		commit="$(git log -1 --format='format:%H' "$version/$variant")"
-		echo
-		for va in "${versionAliases[@]}"; do
-			if [ "$va" = 'latest' ]; then
-				va="$variant"
-			else
-				va="$va-$variant"
-			fi
-			echo "$va: ${url}@${commit} $version/$variant"
-		done
+	for variant in onbuild slim; do
+		if [ -d $version/$variant ]; then
+			commit="$(git log -1 --format='format:%H' "$version/$variant")"
+			echo
+			for va in "${versionAliases[@]}"; do
+				if [ "$va" = 'latest' ]; then
+					va="$variant"
+				else
+					va="$va-$variant"
+				fi
+				echo "$va: ${url}@${commit} $version/$variant"
+			done
+		fi
 	done
 done

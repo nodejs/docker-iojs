@@ -1,15 +1,19 @@
-FROM buildpack-deps
+FROM debian:wheezy
 
-RUN apt-get update && apt-get install -y \
+RUN apt-get update && apt-get install -y --no-install-recommends \
 		ca-certificates \
-		curl
+		curl \
+		build-essential \
+		pkg-config \
+		git \
+		python # needed by gyp
 
-# verify gpg and sha256: http://nodejs.org/dist/v0.10.31/SHASUMS256.txt.asc
+# verify gpg and sha256: http://nodejs.org/dist/v0.10.30/SHASUMS256.txt.asc
 # gpg: aka "Timothy J Fontaine (Work) <tj.fontaine@joyent.com>"
 RUN gpg --keyserver pgp.mit.edu --recv-keys 7937DFD2AB06298B2293C3187D33FF9D0246406D
 
-ENV NODE_VERSION 0.10.32
-ENV NPM_VERSION 2.1.2
+ENV NODE_VERSION 0.11.14
+ENV NPM_VERSION 2.0.2
 
 RUN curl -SLO "http://nodejs.org/dist/v$NODE_VERSION/node-v$NODE_VERSION-linux-x64.tar.gz" \
 	&& curl -SLO "http://nodejs.org/dist/v$NODE_VERSION/SHASUMS256.txt.asc" \
