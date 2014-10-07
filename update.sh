@@ -18,12 +18,10 @@ for version in "${versions[@]}"; do
 			s/^(ENV NODE_VERSION) .*/\1 '"$fullVersion"'/;
 			s/^(ENV NPM_VERSION) .*/\1 '"$npmVersion"'/;
 		' "$version/Dockerfile"
-		if [ -d "$version/slim" ]; then
-			sed -ri '
-				s/^(ENV NODE_VERSION) .*/\1 '"$fullVersion"'/;
-				s/^(ENV NPM_VERSION) .*/\1 '"$npmVersion"'/;
-			' "$version/slim/Dockerfile"
-		fi
+		sed -ri '
+			s/^(ENV NODE_VERSION) .*/\1 '"$fullVersion"'/;
+			s/^(ENV NPM_VERSION) .*/\1 '"$npmVersion"'/;
+		' "$version/slim/Dockerfile"
 		sed -ri 's/^(FROM node):.*/\1:'"$fullVersion"'/' "$version/onbuild/Dockerfile"
 	)
 done
