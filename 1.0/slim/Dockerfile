@@ -13,7 +13,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 # gpg: aka "Rod Vagg <rod@vagg.org>"
 RUN gpg --keyserver pool.sks-keyservers.net --recv-keys C273792F7D83545D
 
-ENV IOJS_VERSION 1.0.0
+ENV IOJS_VERSION 1.0.1
 ENV NPM_VERSION 2.1.18
 
 RUN curl -SLO "https://iojs.org/dist/v$IOJS_VERSION/iojs-v$IOJS_VERSION-linux-x64.tar.gz" \

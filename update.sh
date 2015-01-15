@@ -18,6 +18,6 @@ for version in "${versions[@]}"; do
 			s/^(ENV IOJS_VERSION) .*/\1 '"$fullVersion"'/;
 			s/^(ENV NPM_VERSION) .*/\1 '"$npmVersion"'/;
 		' "$version/Dockerfile" "$version/slim/Dockerfile"
-		sed -ri 's/^(FROM onestone/iojs):.*/\1:'"$fullVersion"'/' "$version/onbuild/Dockerfile"
+		sed -ri 's/^(FROM onestone\/iojs):.*/\1:'"$fullVersion"'/' "$version/onbuild/Dockerfile"
 	)
 done

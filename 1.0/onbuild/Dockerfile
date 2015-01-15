@@ -1,4 +1,4 @@
-FROM onestone/iojs:1.0.0
+FROM onestone/iojs:1.0.1
 
 RUN mkdir -p /usr/src/app
 WORKDIR /usr/src/app
