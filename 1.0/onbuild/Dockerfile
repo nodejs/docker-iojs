@@ -1,4 +1,4 @@
-FROM node:0.11.14
+FROM onestone/docker-iojs:1.0.0
 
 RUN mkdir -p /usr/src/app
 WORKDIR /usr/src/app
