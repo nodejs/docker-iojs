@@ -2,7 +2,11 @@ FROM buildpack-deps
 
 RUN apt-get update && apt-get install -y \
 		ca-certificates \
-		curl
+		curl \
+    pkg-config \
+    python \
+ && rm -rf /var/lib/apt/lists/*
+
 
 # verify gpg and sha256: https://iojs.org/dist/v1.0.0/SHASUMS256.txt.gpg
 # gpg: aka "Rod Vagg <rod@vagg.org>"
