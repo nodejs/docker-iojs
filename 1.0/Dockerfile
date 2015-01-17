@@ -1,10 +1,10 @@
 FROM buildpack-deps
 
 RUN apt-get update && apt-get install -y \
-		ca-certificates \
-		curl \
-    pkg-config \
-    python \
+      ca-certificates \
+      curl \
+      pkg-config \
+      python \
  && rm -rf /var/lib/apt/lists/*
 
 
