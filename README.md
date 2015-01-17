@@ -46,5 +46,5 @@ $ docker run --rm -it iojs-app
 To run a single script, you can mount it in a volume under `/usr/src/app`. From the root of your application directory (assuming your script is named `index.js`):
 
 ```
-$ docker run -v ${PWD}:/usr/src/app --it --rm iojs/iojs iojs index.js
+$ docker run -v ${PWD}:/usr/src/app -w /usr/src/app --it --rm iojs/iojs iojs index.js
 ```
