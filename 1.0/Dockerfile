@@ -10,7 +10,7 @@ RUN apt-get update && apt-get install -y \
 
 # verify gpg and sha256: https://iojs.org/dist/v1.0.0/SHASUMS256.txt.gpg
 # gpg: aka "Rod Vagg <rod@vagg.org>"
-RUN gpg --keyserver pool.sks-keyservers.net --recv-keys C273792F7D83545D
+RUN gpg --keyserver pool.sks-keyservers.net --recv-keys DD8F2338BAE7501E3DD5AC78C273792F7D83545D
 
 ENV IOJS_VERSION 1.0.2
 
