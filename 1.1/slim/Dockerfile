@@ -1,13 +1,4 @@
-FROM debian:jessie
-
-RUN apt-get update && apt-get install -y --no-install-recommends \
-      ca-certificates \
-      curl \
-      build-essential \
-      pkg-config \
-      git \
-      python \
-  && rm -rf /var/lib/apt/lists/*
+FROM buildpack-deps:jessie-curl
 
 # gpg keys listed at https://github.com/iojs/io.js
 RUN gpg --keyserver pool.sks-keyservers.net --recv-keys 9554F04D7259F04124DE6B476D5A82AC7E37093B DD8F2338BAE7501E3DD5AC78C273792F7D83545D
