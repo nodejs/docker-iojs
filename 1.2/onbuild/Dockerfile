@@ -1,4 +1,4 @@
-FROM iojs:1.1.0
+FROM iojs:1.2.0
 
 RUN mkdir -p /usr/src/app
 WORKDIR /usr/src/app
