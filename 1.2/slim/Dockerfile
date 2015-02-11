@@ -14,4 +14,4 @@ RUN curl -SLO "https://iojs.org/dist/v$IOJS_VERSION/iojs-v$IOJS_VERSION-linux-x6
   && tar -xzf "iojs-v$IOJS_VERSION-linux-x64.tar.gz" -C /usr/local --strip-components=1 \
   && rm "iojs-v$IOJS_VERSION-linux-x64.tar.gz" SHASUMS256.txt.asc
 
-CMD [ "su", "-c", "\"iojs\"", "app" ]
+CMD [ "su", "-c", "iojs", "app" ]

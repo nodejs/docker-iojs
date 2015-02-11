@@ -7,4 +7,4 @@ ONBUILD COPY package.json /usr/src/app/
 ONBUILD RUN npm install
 ONBUILD COPY . /usr/src/app
 
-CMD [ "su", "-c", "\"npm start\"", "app" ]
+CMD [ "su", "-c", "npm start", "app" ]
