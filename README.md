@@ -21,7 +21,7 @@ This project aims to continue development of io.js under an "open governance mod
 
 If you want to distribute your application on the docker registry, create a `Dockerfile` in the root of application directory:
 
-```
+```Dockerfile
 FROM iojs:onbuild
 
 # Expose the ports that your app uses. In Example:
