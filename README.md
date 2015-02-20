@@ -41,3 +41,19 @@ To run a single script, you can mount it in a volume under `/usr/src/app`. From 
 ```
 $ docker run -v ${PWD}:/usr/src/app -w /usr/src/app -it --rm iojs iojs index.js
 ```
+
+## Image Varients
+
+The `iojs` images come in three flavors, each designed for a specific use case. 
+
+`<version>`:
+
+This is the defacto image. If you are unsure about what your needs are, you probably want to use this one. It is designed to be used both as a throw away container (mount your source code and start the container to start your app), as well as the base to build other images off of.
+
+`<version>-onbuild`:
+
+This image makes building derivitative images easier. For most use cases, creating a `Dockerfile` in the base of your project directory with the line `FROM iojs:onbuild` will be enough to create a stand-alone image for your project.
+
+`<version>-slim:`
+
+The default tag is based off of `buildpack-deps`.`buildpack-deps` is designed for the average user of docker who has many images on thier system. It, by design, has a large number of extremely common debian packages. This reduces the number of packages that images that derive from it need to install, thus reducing the total size of all of your docker images on your system. Unless you are working in an environment where *only* the iojs image will be deployed and you have space constraints, we highly recommend using the default image of this repository.
