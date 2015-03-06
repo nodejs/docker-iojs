@@ -3,7 +3,7 @@ FROM buildpack-deps:jessie
 # gpg keys listed at https://github.com/iojs/io.js
 RUN gpg --keyserver pool.sks-keyservers.net --recv-keys 9554F04D7259F04124DE6B476D5A82AC7E37093B DD8F2338BAE7501E3DD5AC78C273792F7D83545D
 
-ENV IOJS_VERSION 1.4.1
+ENV IOJS_VERSION 1.4.3
 
 RUN curl -SLO "https://iojs.org/dist/v$IOJS_VERSION/iojs-v$IOJS_VERSION-linux-x64.tar.gz" \
   && curl -SLO "https://iojs.org/dist/v$IOJS_VERSION/SHASUMS256.txt.asc" \
