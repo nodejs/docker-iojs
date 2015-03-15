@@ -26,11 +26,11 @@ WG on an ongoing basis.
 Individuals making significant and valuable contributions are made
 Collaborators and given commit-access to the project. These
 individuals are identified by the WG and their addition as
-Collaborators is discussed during the weekly WG meeting.
+Collaborators is discussed as a pull request to this project's
+[README.md](./README.md#people).
 
 _Note:_ If you make a significant contribution and are not considered
-for commit-access log an issue or contact a WG member directly and it
-will be brought up in the next WG meeting.
+for commit-access log an issue or contact a WG member directly.
 
 Modifications of the contents of the iojs/docker-iojs repository are made on
 a collaborative basis. Anybody with a GitHub account may propose a
@@ -66,18 +66,8 @@ membership beyond these rules.
 The WG may add additional members to the WG by unanimous consensus.
 
 A WG member may be removed from the WG by voluntary resignation, or by
-unanimous consensus of all other WG members.
-
-Changes to WG membership should be posted in the agenda, and may be
-suggested as any other agenda item (see "WG Meetings" below).
-
-If an addition or removal is proposed during a meeting, and the full
-WG is not in attendance to participate, then the addition or removal
-is added to the agenda for the subsequent meeting.  This is to ensure
-that all members are given the opportunity to participate in all
-membership decisions.  If a WG member is unable to attend a meeting
-where a planned membership decision is being made, then their consent
-is assumed.
+unanimous consensus of all other WG members in an issue or pull request
+on the [iojs/docker-iojs](https://github.com/iojs/docker-iojs) repository
 
 No more than 1/3 of the WG members may be affiliated with the same
 employer.  If removal or resignation of a WG member, or a change of
@@ -88,33 +78,14 @@ members affiliated with the over-represented employer(s).
 
 ## WG Meetings
 
-The WG meets as needed on a Google Hangout On Air. The meeting is run by
-a designated moderator approved by the WG. Each meeting should be
-published to YouTube.
+This working group does not meet. All discussions and decisions happen
+in the [iojs/docker-iojs](https://github.com/iojs/docker-iojs) repository
+in issues and pull requests. Items can be flagged as needing a board
+decision by **WG-agenda** tag to the issue.
 
-Items are added to the WG agenda which are considered contentious or
-are modifications of governance, contribution policy, WG membership,
-or release process.
-
-The intention of the agenda is not to approve or review all patches,
-that should happen continuously on GitHub and be handled by the larger
-group of Collaborators.
-
-Any community member or contributor can ask that something be added to
-the next meeting's agenda by logging a GitHub Issue. Any Collaborator,
-WG member or the moderator can add the item to the agenda by adding
-the ***WG-agenda*** tag to the issue.
-
-Prior to each WG meeting the moderator will share the Agenda with
-members of the WG. WG members can add any items they like to the
-agenda at the beginning of each meeting. The moderator and the WG
-cannot veto or remove items.
-
-The WG may invite persons or representatives from certain projects to
-participate in a non-voting capacity.
-
-The moderator is responsible for summarizing the discussion of each
-agenda item and send it as a pull request after the meeting.
+When an issue is tagged with **WG-agenda**, The WG may invite persons or
+representatives from certain projects to participate in the discussion in
+a non-voting capacity.
 
 ## Consensus Seeking Process
 
@@ -127,8 +98,7 @@ will ask "Does anyone object?" as a final call for dissent from the
 consensus.
 
 If an agenda item cannot reach a consensus a WG member can call for
-either a closing vote or a vote to table the issue to the next
-meeting. The call for a vote must be seconded by a majority of the WG
+a closing vote. The call for a vote must be seconded by a majority of the WG
 or else the discussion will continue. Simple majority wins.
 
 Note that changes to WG membership require unanimous consensus.  See
