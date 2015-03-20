@@ -3,7 +3,7 @@ set -e
 
 declare -A aliases
 aliases=(
-	[1.5]='1 latest'
+	[1.6]='1 latest'
 )
 
 cd "$(dirname "$(readlink -f "$BASH_SOURCE")")"
@@ -18,12 +18,12 @@ for version in "${versions[@]}"; do
 	commit="$(git log -1 --format='format:%H' -- "$version")"
 	fullVersion="$(grep -m1 'ENV IOJS_VERSION ' "$version/Dockerfile" | cut -d' ' -f3)"
 	versionAliases=( $fullVersion $version ${aliases[$version]} )
-	
+
 	echo
 	for va in "${versionAliases[@]}"; do
 		echo "$va: ${url}@${commit} $version"
 	done
-	
+
 	for variant in onbuild slim; do
 		commit="$(git log -1 --format='format:%H' -- "$version/$variant")"
 		echo
