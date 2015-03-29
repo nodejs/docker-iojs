@@ -41,3 +41,13 @@ To run a single script, you can mount it in a volume under `/usr/src/app`. From 
 ```
 $ docker run -v ${PWD}:/usr/src/app -w /usr/src/app -it --rm iojs iojs index.js
 ```
+
+# People
+
+Current Project Team Members:
+
+ * [@hmalphettes](https://www.github.com/hmalphettes)
+ * [@jlmitch5](https://www.github.com/jlmitch5)
+ * [@pesho](https://www.github.com/pesho)
+ * [@Starefossen](https://www.github.com/starefossen)
+ * [@wblankenship](https://www.github.com/wblankenship)
