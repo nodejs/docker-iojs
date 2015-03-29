@@ -93,6 +93,14 @@ The WG follows a
 [Consensus Seeking](http://en.wikipedia.org/wiki/Consensus-seeking_decision-making)
 decision making model.
 
+All proposed changes to the project must be made in the form
+of a pull request to the repository (directly commiting to a production
+branch of the repository is not permitted). The consensus seeking process
+will then follow via discussion by the WG members on that pull request.
+Changes deemed trivial by WG members may be merged instantly by any
+WG member, without waiting for consensus, so long as they leave  a note
+explaining the reason for the merge.
+
 When an agenda item has appeared to reach a consensus the moderator
 will ask "Does anyone object?" as a final call for dissent from the
 consensus.
