@@ -55,7 +55,7 @@ For the current list of Collaborators, see the project
 
 ## WG Membership
 
-WG seats are not time-limited.  There is no fixed size of the WG.
+WG seats are not time-limited. There is no fixed size of the WG.
 However, the expected target is between 6 and 12, to ensure adequate
 coverage of important areas of expertise, balanced with the ability to
 make decisions efficiently.
@@ -70,7 +70,7 @@ unanimous consensus of all other WG members in an issue or pull request
 on the [iojs/docker-iojs](https://github.com/iojs/docker-iojs) repository
 
 No more than 1/3 of the WG members may be affiliated with the same
-employer.  If removal or resignation of a WG member, or a change of
+employer. If removal or resignation of a WG member, or a change of
 employment by a WG member, creates a situation where more than 1/3 of
 the WG membership shares an employer, then the situation must be
 immediately remedied by the resignation or removal of one or more WG
@@ -101,5 +101,5 @@ If an agenda item cannot reach a consensus a WG member can call for
 a closing vote. The call for a vote must be seconded by a majority of the WG
 or else the discussion will continue. Simple majority wins.
 
-Note that changes to WG membership require unanimous consensus.  See
+Note that changes to WG membership require unanimous consensus. See
 "WG Membership" above.
