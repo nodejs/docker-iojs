@@ -1,7 +1,0 @@
-iojs2:
-    build: .
-    command: iojs --version
-
-iojs2slim:
-    build: slim
-    command: iojs --version
