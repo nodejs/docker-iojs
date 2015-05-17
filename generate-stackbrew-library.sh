@@ -11,9 +11,9 @@ cd "$(dirname "$(readlink -f "$BASH_SOURCE")")"
 
 versions=( */ )
 versions=( "${versions[@]%/}" )
-url='git://github.com/iojs/docker-iojs'
+url='git://github.com/nodejs/docker-iojs'
 
-echo '# maintainer: io.js Docker team <https://github.com/iojs/docker-iojs> (@iojs)'
+echo '# maintainer: io.js Docker team <https://github.com/nodejs/docker-iojs> (@iojs)'
 
 for version in "${versions[@]}"; do
 	commit="$(git log -1 --format='format:%H' -- "$version")"

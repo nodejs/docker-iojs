@@ -2,8 +2,8 @@
 
 [![dockeri.co](http://dockeri.co/image/_/iojs)](https://registry.hub.docker.com/_/iojs/)
 
-[![GitHub issues](https://img.shields.io/github/issues/iojs/docker-iojs.svg "GitHub issues")](https://github.com/iojs/docker-iojs)
-[![GitHub stars](https://img.shields.io/github/stars/iojs/docker-iojs.svg "GitHub stars")](https://github.com/iojs/docker-iojs)
+[![GitHub issues](https://img.shields.io/github/issues/nodejs/docker-iojs.svg "GitHub issues")](https://github.com/nodejs/docker-iojs)
+[![GitHub stars](https://img.shields.io/github/stars/nodejs/docker-iojs.svg "GitHub stars")](https://github.com/nodejs/docker-iojs)
 
 The official iojs docker image, made with love by the iojs community.
 
@@ -84,9 +84,9 @@ repository.
 
 # License
 
-[License information](https://github.com/iojs/io.js/blob/master/LICENSE) for
+[License information](https://github.com/nodejs/io.js/blob/master/LICENSE) for
 the software contained in this image. [License
-information](https://github.com/iojs/docker-iojs/blob/master/LICENSE) for the
+information](https://github.com/nodejs/docker-iojs/blob/master/LICENSE) for the
 io.js Docker project.
 
 # Supported Docker versions
