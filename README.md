@@ -99,6 +99,7 @@ Support for older versions (down to 1.0) is provided on a best-effort basis.
 
 Current Project Team Members:
 
+ * [@chorrell](https://github.com/chorrell)
  * [@hmalphettes](https://www.github.com/hmalphettes)
  * [@jlmitch5](https://www.github.com/jlmitch5)
  * [@pesho](https://www.github.com/pesho)
