@@ -11,7 +11,7 @@ RUN set -ex \
     DD8F2338BAE7501E3DD5AC78C273792F7D83545D \
   ; do \
     gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$key" \
-  done
+  ; done
 
 ENV NPM_CONFIG_LOGLEVEL info
 ENV IOJS_VERSION 3.3.0
